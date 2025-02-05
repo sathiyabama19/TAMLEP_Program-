@@ -1,0 +1,5705 @@
+Script started on 2025-02-05 05:42:52+00:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="124" LINES="35"]
+[?2004h(base) ]0;sathiyabama@TIGER06186: ~[01;32msathiyabama@TIGER06186[00m:[01;34m~[00m$ conda info
+[?2004l
+     active environment : base
+    active env location : /home/sathiyabama/miniforge3
+            shell level : 1
+       user config file : /home/sathiyabama/.condarc
+ populated config files : /home/sathiyabama/miniforge3/.condarc
+          conda version : 24.11.3
+    conda-build version : not installed
+         python version : 3.12.8.final.0
+                 solver : libmamba (default)
+       virtual packages : __archspec=1=skylake
+                          __conda=24.11.3=0
+                          __glibc=2.39=0
+                          __linux=5.15.167.4=0
+                          __unix=0=0
+       base environment : /home/sathiyabama/miniforge3  (writable)
+      conda av data dir : /home/sathiyabama/miniforge3/etc/conda
+  conda av metadata url : None
+           channel URLs : https://conda.anaconda.org/conda-forge/linux-64
+                          https://conda.anaconda.org/conda-forge/noarch
+          package cache : /home/sathiyabama/miniforge3/pkgs
+                          /home/sathiyabama/.conda/pkgs
+       envs directories : /home/sathiyabama/miniforge3/envs
+                          /home/sathiyabama/.conda/envs
+               platform : linux-64
+             user-agent : conda/24.11.3 requests/2.32.3 CPython/3.12.8 Linux/5.15.167.4-microsoft-standard-WSL2 ubuntu/24.04.1 glibc/2.39 solver/libmamba conda-libmamba-solver/24.9.0 libmambapy/1.5.12
+                UID:GID : 1000:1000
+             netrc file : None
+           offline mode : False
+
+[?2004h(base) ]0;sathiyabama@TIGER06186: ~[01;32msathiyabama@TIGER06186[00m:[01;34m~[00m$ [7mconda create --name <my-env>[27m[1Pconda create --name <my-env[K[K[K[K[K[K[KTamplep [K
+[?2004lRetrieving notices: - \ done
+Channels:
+ - conda-forge
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - done
+Solving environment: | done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 24.11.3
+    latest version: 25.1.1
+
+Please update conda by running
+
+    $ conda update -n base -c conda-forge conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/sathiyabama/miniforge3/envs/Tamplep
+
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: / done
+Verifying transaction: \ | done
+Executing transaction: - done
+#
+# To activate this environment, use
+#
+#     $ conda activate Tamplep
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+[?2004h(base) ]0;sathiyabama@TIGER06186: ~[01;32msathiyabama@TIGER06186[00m:[01;34m~[00m$ pth[K[K[Kpt[Kython --version
+[?2004lPython 3.12.8
+[?2004h(base) ]0;sathiyabama@TIGER06186: ~[01;32msathiyabama@TIGER06186[00m:[01;34m~[00m$ [7mconda create -n myenv python=3.9[27mconda create -n myenv python=3.9[C[1P python=3.9[1P python=3.9[1P python=3.9[1P python=3.9[1P python=3.9T python=3.9a python=3.9m python=3.9p python=3.9l python=3.9e python=3.9p python=3.9[C python=3.9[1Ppython=3.9[C[C[C[C[C[C[C[C[C[C[C
+[?2004lWARNING: A conda environment already exists at '/home/sathiyabama/miniforge3/envs/Tamplep'
+
+Remove existing environment?
+This will remove ALL directories contained within this specified prefix directory, including any other conda environments.
+
+ (y/[n])? n
+
+
+CondaSystemExit: Exiting.
+
+[?2004h(base) ]0;sathiyabama@TIGER06186: ~[01;32msathiyabama@TIGER06186[00m:[01;34m~[00m$ pwd
+[?2004l/home/sathiyabama
+[?2004h(base) ]0;sathiyabama@TIGER06186: ~[01;32msathiyabama@TIGER06186[00m:[01;34m~[00m$ [7mconda env create -f environment.yml[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cconda env create -f environment.yml
+[?2004l
+EnvironmentFileNotFound: '/home/sathiyabama/environment.yml' file not found
+
+[?2004h(base) ]0;sathiyabama@TIGER06186: ~[01;32msathiyabama@TIGER06186[00m:[01;34m~[00m$ cd miniforge3/
+[?2004l[?2004h(base) ]0;sathiyabama@TIGER06186: ~/miniforge3[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3[00m$ [7mconda env create -f environment.yml[27mconda env create -f environment.yml
+[?2004lChannels:
+ - conda-forge
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - \ | done
+Solving environment: - \ done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 24.11.3
+    latest version: 25.1.1
+
+Please update conda by running
+
+    $ conda update -n base -c conda-forge conda
+
+
+
+Downloading and Extracting Packages:
+python-3.9.21        | 22.5 MB   |                                                                                   |   0% 
+pandas-2.2.3         | 12.3 MB   |                                                                                   |   0% [A
+
+numpy-2.0.2          | 7.6 MB    |                                                                                   |   0% [A[A
+
+
+libopenblas-0.3.28   | 5.3 MB    |                                                                                   |   0% [A[A[A
+
+
+
+libgfortran5-14.2.0  | 1.4 MB    |                                                                                   |   0% [A[A[A[A
+
+
+
+
+pip-25.0             | 1.2 MB    |                                                                                   |   0% [A[A[A[A[A
+
+
+
+
+
+ncurses-6.5          | 871 KB    |                                                                                   |   0% [A[A[A[A[A[A
+
+
+
+
+
+
+libsqlite-3.48.0     | 858 KB    |                                                                                   |   0% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+python-dateutil-2.9. | 217 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+pytz-2024.1          | 184 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+ca-certificates-2025 | 154 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+python-tzdata-2025.1 | 140 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+liblzma-5.6.4        | 109 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+libgfortran-14.2.0   | 53 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+libblas-3.9.0        | 16 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+liblapack-3.9.0      | 16 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libcblas-3.9.0       | 16 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+six-1.17.0           | 16 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+python_abi-3.9       | 6 KB      |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+libopenblas-0.3.28   | 5.3 MB    | 2                                                                                 |   0% [A[A[Apython-3.9.21        | 22.5 MB   |                                                                                   |   0% 
+
+numpy-2.0.2          | 7.6 MB    | 1                                                                                 |   0% [A[A
+
+
+
+libgfortran5-14.2.0  | 1.4 MB    | 9                                                                                 |   1% [A[A[A[A
+
+
+libopenblas-0.3.28   | 5.3 MB    | ###########4                                                                      |  14% [A[A[Apython-3.9.21        | 22.5 MB   | #4                                                                                |   2% 
+
+
+
+libgfortran5-14.2.0  | 1.4 MB    | ########################################8                                         |  50% [A[A[A[A
+
+numpy-2.0.2          | 7.6 MB    | ###                                                                               |   4% [A[A
+pandas-2.2.3         | 12.3 MB   | 1                                                                                 |   0% [A
+
+
+libopenblas-0.3.28   | 5.3 MB    | #####################1                                                            |  26% [A[A[A
+
+
+
+libgfortran5-14.2.0  | 1.4 MB    | #############################################################################1    |  95% [A[A[A[Apython-3.9.21        | 22.5 MB   | ###1                                                                              |   4% 
+
+numpy-2.0.2          | 7.6 MB    | ######                                                                            |   7% [A[A
+pandas-2.2.3         | 12.3 MB   | #4                                                                                |   2% [A
+
+
+
+libgfortran5-14.2.0  | 1.4 MB    | ################################################################################# | 100% [A[A[A[A
+
+
+
+libgfortran5-14.2.0  | 1.4 MB    | ################################################################################# | 100% [A[A[A[Apython-3.9.21        | 22.5 MB   | ####9                                                                             |   6% 
+
+numpy-2.0.2          | 7.6 MB    | #########                                                                         |  11% [A[A
+pandas-2.2.3         | 12.3 MB   | #####8                                                                            |   7% [A
+
+
+
+
+pip-25.0             | 1.2 MB    | #                                                                                 |   1% [A[A[A[A[A
+
+
+libopenblas-0.3.28   | 5.3 MB    | #############################2                                                    |  36% [A[A[Apython-3.9.21        | 22.5 MB   | ######6                                                                           |   8% 
+
+numpy-2.0.2          | 7.6 MB    | ###########5                                                                      |  14% [A[A
+pandas-2.2.3         | 12.3 MB   | ########8                                                                         |  11% [A
+
+
+
+
+pip-25.0             | 1.2 MB    | ########################################                                          |  49% [A[A[A[A[A
+
+
+libopenblas-0.3.28   | 5.3 MB    | ####################################1                                             |  45% [A[A[Apython-3.9.21        | 22.5 MB   | ########2                                                                         |  10% 
+pandas-2.2.3         | 12.3 MB   | ############5                                                                     |  15% [A
+
+
+
+
+pip-25.0             | 1.2 MB    | ####################################################################5             |  85% [A[A[A[A[A
+
+
+
+
+pip-25.0             | 1.2 MB    | ################################################################################# | 100% [A[A[A[A[A
+
+numpy-2.0.2          | 7.6 MB    | ##############                                                                    |  17% [A[A
+
+
+libopenblas-0.3.28   | 5.3 MB    | ##########################################5                                       |  53% [A[A[Apython-3.9.21        | 22.5 MB   | ##########5                                                                       |  13% 
+
+
+
+
+
+ncurses-6.5          | 871 KB    | #4                                                                                |   2% [A[A[A[A[A[A
+pandas-2.2.3         | 12.3 MB   | ###############5                                                                  |  19% [A
+
+
+
+
+pip-25.0             | 1.2 MB    | ################################################################################# | 100% [A[A[A[A[A
+
+numpy-2.0.2          | 7.6 MB    | ################4                                                                 |  20% [A[A
+
+
+
+
+
+ncurses-6.5          | 871 KB    | ###################################7                                              |  44% [A[A[A[A[A[Apython-3.9.21        | 22.5 MB   | ############3                                                                     |  15% 
+pandas-2.2.3         | 12.3 MB   | ##################4                                                               |  23% [A
+
+
+
+
+
+ncurses-6.5          | 871 KB    | #####################################################################9            |  86% [A[A[A[A[A[A
+
+numpy-2.0.2          | 7.6 MB    | ##################4                                                               |  23% [A[A
+
+
+libopenblas-0.3.28   | 5.3 MB    | ################################################7                                 |  60% [A[A[A
+
+
+
+
+
+ncurses-6.5          | 871 KB    | ################################################################################# | 100% [A[A[A[A[A[Apython-3.9.21        | 22.5 MB   | ##############3                                                                   |  18% 
+
+
+
+
+
+
+libsqlite-3.48.0     | 858 KB    | #5                                                                                |   2% [A[A[A[A[A[A[A
+pandas-2.2.3         | 12.3 MB   | #####################4                                                            |  26% [A
+
+numpy-2.0.2          | 7.6 MB    | ####################9                                                             |  26% [A[A
+
+
+libopenblas-0.3.28   | 5.3 MB    | #####################################################7                            |  66% [A[A[Apython-3.9.21        | 22.5 MB   | ################7                                                                 |  21% 
+
+
+
+
+
+
+libsqlite-3.48.0     | 858 KB    | #####################################7                                            |  47% [A[A[A[A[A[A[A
+pandas-2.2.3         | 12.3 MB   | ########################                                                          |  30% [A
+
+numpy-2.0.2          | 7.6 MB    | #######################2                                                          |  29% [A[A
+
+
+libopenblas-0.3.28   | 5.3 MB    | ##########################################################7                       |  73% [A[A[Apython-3.9.21        | 22.5 MB   | ##################8                                                               |  23% 
+
+
+
+
+
+
+libsqlite-3.48.0     | 858 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+libsqlite-3.48.0     | 858 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A
+pandas-2.2.3         | 12.3 MB   | ##########################8                                                       |  33% [A
+
+numpy-2.0.2          | 7.6 MB    | #########################6                                                        |  32% [A[A
+
+
+
+
+
+
+
+python-dateutil-2.9. | 217 KB    | #####9                                                                            |   7% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+libsqlite-3.48.0     | 858 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A
+
+
+libopenblas-0.3.28   | 5.3 MB    | ###############################################################5                  |  78% [A[A[Apython-3.9.21        | 22.5 MB   | #####################1                                                            |  26% 
+
+
+
+
+
+
+
+python-dateutil-2.9. | 217 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A
+pandas-2.2.3         | 12.3 MB   | #############################6                                                    |  37% [A
+
+numpy-2.0.2          | 7.6 MB    | ###########################9                                                      |  35% [A[A
+
+
+
+
+
+
+
+python-dateutil-2.9. | 217 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+pytz-2024.1          | 184 KB    | #######                                                                           |   9% [A[A[A[A[A[A[A[A[Apython-3.9.21        | 22.5 MB   | #######################2                                                          |  29% 
+
+
+libopenblas-0.3.28   | 5.3 MB    | ####################################################################2             |  84% [A[A[A
+
+
+
+
+
+
+
+
+pytz-2024.1          | 184 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A
+pandas-2.2.3         | 12.3 MB   | ################################3                                                 |  40% [A
+
+numpy-2.0.2          | 7.6 MB    | ##############################1                                                   |  37% [A[A
+
+
+
+
+
+
+
+
+
+ca-certificates-2025 | 154 KB    | ########3                                                                         |  10% [A[A[A[A[A[A[A[A[A[Apython-3.9.21        | 22.5 MB   | #########################5                                                        |  32% 
+
+
+
+
+
+
+
+
+
+ca-certificates-2025 | 154 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+libopenblas-0.3.28   | 5.3 MB    | #########################################################################         |  90% [A[A[A
+pandas-2.2.3         | 12.3 MB   | ###################################                                               |  43% [A
+
+numpy-2.0.2          | 7.6 MB    | ################################8                                                 |  41% [A[A
+
+
+
+
+
+
+
+
+
+ca-certificates-2025 | 154 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+python-tzdata-2025.1 | 140 KB    | #########2                                                                        |  11% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+python-tzdata-2025.1 | 140 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[Apython-3.9.21        | 22.5 MB   | ###########################8                                                      |  34% 
+
+
+libopenblas-0.3.28   | 5.3 MB    | ##############################################################################2   |  97% [A[A[A
+pandas-2.2.3         | 12.3 MB   | #####################################9                                            |  47% [A
+
+numpy-2.0.2          | 7.6 MB    | ###################################3                                              |  44% [A[A
+
+
+
+
+
+
+
+
+
+
+
+liblzma-5.6.4        | 109 KB    | ###########9                                                                      |  15% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+liblzma-5.6.4        | 109 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[Apython-3.9.21        | 22.5 MB   | ##############################8                                                   |  38% 
+
+
+
+
+
+
+
+
+
+
+
+
+libgfortran-14.2.0   | 53 KB     | ########################5                                                         |  30% [A[A[A[A[A[A[A[A[A[A[A[A[A
+pandas-2.2.3         | 12.3 MB   | #########################################4                                        |  51% [A
+
+
+
+
+
+
+
+
+
+
+
+
+libgfortran-14.2.0   | 53 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+numpy-2.0.2          | 7.6 MB    | ######################################6                                           |  48% [A[Apython-3.9.21        | 22.5 MB   | #################################9                                                |  42% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+libblas-3.9.0        | 16 KB     | ###############################################################################8  |  99% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+libblas-3.9.0        | 16 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+pandas-2.2.3         | 12.3 MB   | #############################################2                                    |  56% [A
+
+numpy-2.0.2          | 7.6 MB    | ##########################################5                                       |  53% [A[A
+
+
+libopenblas-0.3.28   | 5.3 MB    | ################################################################################# | 100% [A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+liblapack-3.9.0      | 16 KB     | ################################################################################1 |  99% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+liblapack-3.9.0      | 16 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[Apython-3.9.21        | 22.5 MB   | #####################################3                                            |  46% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libcblas-3.9.0       | 16 KB     | ################################################################################2 |  99% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libcblas-3.9.0       | 16 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+pandas-2.2.3         | 12.3 MB   | #################################################                                 |  61% [A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+six-1.17.0           | 16 KB     | ################################################################################9 | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+numpy-2.0.2          | 7.6 MB    | ##############################################2                                   |  57% [A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+six-1.17.0           | 16 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Apython-3.9.21        | 22.5 MB   | ########################################9                                         |  51% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+python_abi-3.9       | 6 KB      | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+python_abi-3.9       | 6 KB      | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+pandas-2.2.3         | 12.3 MB   | ####################################################7                             |  65% [A
+
+numpy-2.0.2          | 7.6 MB    | ##################################################2                               |  62% [A[Apython-3.9.21        | 22.5 MB   | ############################################4                                     |  55% 
+pandas-2.2.3         | 12.3 MB   | ########################################################3                         |  70% [A
+
+numpy-2.0.2          | 7.6 MB    | ######################################################                            |  67% [A[A
+
+
+
+
+
+ncurses-6.5          | 871 KB    | ################################################################################# | 100% [A[A[A[A[A[Apython-3.9.21        | 22.5 MB   | ################################################3                                 |  60% 
+
+
+
+
+
+
+
+
+
+
+
+liblzma-5.6.4        | 109 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+liblzma-5.6.4        | 109 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+pandas-2.2.3         | 12.3 MB   | ###########################################################9                      |  74% [A
+
+numpy-2.0.2          | 7.6 MB    | #########################################################7                        |  71% [A[Apython-3.9.21        | 22.5 MB   | ####################################################                              |  64% 
+pandas-2.2.3         | 12.3 MB   | ###############################################################6                  |  79% [A
+
+numpy-2.0.2          | 7.6 MB    | #############################################################7                    |  76% [A[A
+
+
+
+
+
+
+
+
+
+
+
+
+libgfortran-14.2.0   | 53 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+libgfortran-14.2.0   | 53 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[Apython-3.9.21        | 22.5 MB   | #######################################################5                          |  69% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+libblas-3.9.0        | 16 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+pandas-2.2.3         | 12.3 MB   | ###################################################################2              |  83% [A
+
+numpy-2.0.2          | 7.6 MB    | #################################################################9                |  81% [A[Apython-3.9.21        | 22.5 MB   | ###########################################################3                      |  73% 
+pandas-2.2.3         | 12.3 MB   | ######################################################################8           |  88% [A
+
+numpy-2.0.2          | 7.6 MB    | #####################################################################9            |  86% [A[Apython-3.9.21        | 22.5 MB   | ###############################################################2                  |  78% 
+
+
+
+
+
+
+
+
+pytz-2024.1          | 184 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+pytz-2024.1          | 184 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A
+pandas-2.2.3         | 12.3 MB   | ##########################################################################3       |  92% [A
+
+numpy-2.0.2          | 7.6 MB    | #########################################################################8        |  91% [A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+liblapack-3.9.0      | 16 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[Apython-3.9.21        | 22.5 MB   | ###################################################################1              |  83% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libcblas-3.9.0       | 16 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+pandas-2.2.3         | 12.3 MB   | #############################################################################8    |  96% [A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+six-1.17.0           | 16 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+numpy-2.0.2          | 7.6 MB    | #############################################################################6    |  96% [A[Apython-3.9.21        | 22.5 MB   | ######################################################################8           |  88% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+python_abi-3.9       | 6 KB      | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+python-tzdata-2025.1 | 140 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+python-tzdata-2025.1 | 140 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A
+pandas-2.2.3         | 12.3 MB   | ################################################################################# | 100% [A
+
+
+libopenblas-0.3.28   | 5.3 MB    | ################################################################################# | 100% [A[A[A
+
+numpy-2.0.2          | 7.6 MB    | ################################################################################# | 100% [A[Apython-3.9.21        | 22.5 MB   | ###########################################################################1      |  93% python-3.9.21        | 22.5 MB   | ################################################################################7 | 100% python-3.9.21        | 22.5 MB   | ################################################################################# | 100% 
+
+numpy-2.0.2          | 7.6 MB    | ################################################################################# | 100% [A[Apython-3.9.21        | 22.5 MB   | ################################################################################# | 100% 
+pandas-2.2.3         | 12.3 MB   | ################################################################################# | 100% [A                                                                                                                            
+                                                                                                                            [A
+
+                                                                                                                            [A[A
+
+
+                                                                                                                            [A[A[A
+
+
+
+                                                                                                                            [A[A[A[A
+
+
+
+
+                                                                                                                            [A[A[A[A[A
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+Preparing transaction: - \ done
+Verifying transaction: / - \ | / - \ | / - done
+Executing transaction: | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ done
+#
+# To activate this environment, use
+#
+#     $ conda activate stats
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+[?2004h(base) ]0;sathiyabama@TIGER06186: ~/miniforge3[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3[00m$ [7mconda activate myenv[27mconda activate myenv[1Pv[1Pv[1Pv[1PvTvavmvpvlvev[1Pv[1Pv[1Pvlvevpv[K
+[?2004l
+EnvironmentNameNotFound: Could not find conda environment: Tamlep
+You can list all discoverable environments with `conda info --envs`.
+
+
+[?2004h(base) ]0;sathiyabama@TIGER06186: ~/miniforge3[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3[00m$ cd ..
+[?2004l[?2004h(base) ]0;sathiyabama@TIGER06186: ~[01;32msathiyabama@TIGER06186[00m:[01;34m~[00m$ cd ..onda activate Tamlep
+[?2004l
+EnvironmentNameNotFound: Could not find conda environment: Tamlep
+You can list all discoverable environments with `conda info --envs`.
+
+
+[?2004h(base) ]0;sathiyabama@TIGER06186: ~[01;32msathiyabama@TIGER06186[00m:[01;34m~[00m$ cd miniforge3/
+[?2004l[?2004h(base) ]0;sathiyabama@TIGER06186: ~/miniforge3[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3[00m$ cd envs/
+[?2004l[?2004h(base) ]0;sathiyabama@TIGER06186: ~/miniforge3/envs[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3/envs[00m$ cd envs/miniforge3/onda activate Tamlep
+[?2004l
+EnvironmentNameNotFound: Could not find conda environment: Tamlep
+You can list all discoverable environments with `conda info --envs`.
+
+
+[?2004h(base) ]0;sathiyabama@TIGER06186: ~/miniforge3/envs[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3/envs[00m$ pwd
+[?2004l/home/sathiyabama/miniforge3/envs
+[?2004h(base) ]0;sathiyabama@TIGER06186: ~/miniforge3/envs[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3/envs[00m$ ls
+[?2004l[0m[01;34m'TAMLEP Workshop'[0m   [01;34mTamplep[0m   [01;34mstats[0m   [01;34mtest_env[0m
+[?2004h(base) ]0;sathiyabama@TIGER06186: ~/miniforge3/envs[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3/envs[00m$ conda activate Tamplep
+[?2004l[?2004h(Tamplep) ]0;sathiyabama@TIGER06186: ~/miniforge3/envs[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3/envs[00m$ conda activate Tamplepls[Kpwdconda activate Tamlep[13Pd envs/miniforge3/onda activate Tamlepd ..[Konda activate Tamlepenv create -f environment.yml
+[?2004l
+EnvironmentFileNotFound: '/home/sathiyabama/miniforge3/envs/environment.yml' file not found
+
+[?2004h(Tamplep) ]0;sathiyabama@TIGER06186: ~/miniforge3/envs[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3/envs[00m$ cd ..
+[?2004l[?2004h(Tamplep) ]0;sathiyabama@TIGER06186: ~/miniforge3[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3[00m$ cd ..[Kcd ..onda env create -f environment.yml[13Pactivate Tamplepenv create -f environment.ymld ..[Konda env create -f environment.yml
+[?2004l
+CondaValueError: prefix already exists: /home/sathiyabama/miniforge3/envs/stats
+
+[?2004h(Tamplep) ]0;sathiyabama@TIGER06186: ~/miniforge3[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3[00m$ conda env create -f environment.yml
+[?2004lChannels:
+ - javascript
+ - conda-forge
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / done
+Solving environment: \ | done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 24.11.3
+    latest version: 25.1.1
+
+Please update conda by running
+
+    $ conda update -n base -c conda-forge conda
+
+
+
+Downloading and Extracting Packages:
+pillow-10.3.0        | 40.5 MB   |                                                                                   |   0% 
+python-3.9.19        | 22.7 MB   |                                                                                   |   0% [A
+
+nodejs-16.13.2       | 15.3 MB   |                                                                                   |   0% [A[A
+
+
+bokeh-2.4.2          | 13.8 MB   |                                                                                   |   0% [A[A[A
+
+
+
+icu-69.1             | 13.2 MB   |                                                                                   |   0% [A[A[A[A
+
+
+
+
+numpy-1.21.6         | 6.1 MB    |                                                                                   |   0% [A[A[A[A[A
+
+
+
+
+
+libuv-1.43.0         | 1.0 MB    |                                                                                   |   0% [A[A[A[A[A[A
+
+
+
+
+
+
+libsqlite-3.46.0     | 845 KB    |                                                                                   |   0% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+tornado-6.4.2        | 627 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+freetype-2.12.1      | 620 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libjpeg-turbo-3.0.0  | 604 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+libwebp-base-1.5.0   | 420 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libxcb-1.15          | 375 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+liblzma-devel-5.6.4  | 370 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+openjpeg-2.5.2       | 334 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libpng-1.6.43        | 281 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libtiff-4.6.0        | 276 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lerc-4.0.0           | 275 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lcms2-2.16           | 239 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+werkzeug-3.1.3       | 238 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pyyaml-6.0.2         | 178 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+jinja2-3.1.5         | 110 KB    |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zlib-1.2.13          | 91 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xz-tools-5.6.4       | 88 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+yaml-0.2.5           | 87 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+click-8.1.8          | 83 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+flask-3.1.0          | 80 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libdeflate-1.20      | 70 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libzlib-1.2.13       | 60 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typing_extensions-4. | 39 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xz-gpl-tools-5.6.4   | 33 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+importlib-metadata-8 | 28 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xz-5.6.4             | 23 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+markupsafe-3.0.2     | 22 KB     |                                                                                   |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+python-3.9.19        | 22.7 MB   | 3                                                                                 |   0% [Apillow-10.3.0        | 40.5 MB   |                                                                                   |   0% 
+
+
+
+icu-69.1             | 13.2 MB   |                                                                                   |   0% [A[A[A[A
+python-3.9.19        | 22.7 MB   | ###1                                                                              |   4% [Apillow-10.3.0        | 40.5 MB   | 5                                                                                 |   1% 
+
+
+
+icu-69.1             | 13.2 MB   | #3                                                                                |   2% [A[A[A[Apillow-10.3.0        | 40.5 MB   | #3                                                                                |   2% 
+python-3.9.19        | 22.7 MB   | ####9                                                                             |   6% [A
+
+
+
+icu-69.1             | 13.2 MB   | ###8                                                                              |   5% [A[A[A[Apillow-10.3.0        | 40.5 MB   | ##2                                                                               |   3% 
+python-3.9.19        | 22.7 MB   | ######5                                                                           |   8% [A
+
+nodejs-16.13.2       | 15.3 MB   |                                                                                   |   0% [A[A
+
+
+
+icu-69.1             | 13.2 MB   | #######7                                                                          |  10% [A[A[A[A
+
+nodejs-16.13.2       | 15.3 MB   | 7                                                                                 |   1% [A[Apillow-10.3.0        | 40.5 MB   | ##9                                                                               |   4% 
+python-3.9.19        | 22.7 MB   | ########                                                                          |  10% [A
+
+
+
+icu-69.1             | 13.2 MB   | ##########                                                                        |  12% [A[A[A[A
+
+nodejs-16.13.2       | 15.3 MB   | #7                                                                                |   2% [A[Apillow-10.3.0        | 40.5 MB   | ###5                                                                              |   4% 
+python-3.9.19        | 22.7 MB   | #########4                                                                        |  12% [A
+
+
+
+icu-69.1             | 13.2 MB   | ############1                                                                     |  15% [A[A[A[A
+
+
+bokeh-2.4.2          | 13.8 MB   |                                                                                   |   0% [A[A[A
+
+nodejs-16.13.2       | 15.3 MB   | ###2                                                                              |   4% [A[Apillow-10.3.0        | 40.5 MB   | ####1                                                                             |   5% 
+python-3.9.19        | 22.7 MB   | ##########8                                                                       |  13% [A
+
+
+
+icu-69.1             | 13.2 MB   | ##############1                                                                   |  17% [A[A[A[A
+
+
+bokeh-2.4.2          | 13.8 MB   | 3                                                                                 |   0% [A[A[A
+
+nodejs-16.13.2       | 15.3 MB   | #####                                                                             |   6% [A[Apillow-10.3.0        | 40.5 MB   | ####9                                                                             |   6% 
+python-3.9.19        | 22.7 MB   | ############4                                                                     |  15% [A
+
+
+
+icu-69.1             | 13.2 MB   | ################3                                                                 |  20% [A[A[A[A
+
+
+bokeh-2.4.2          | 13.8 MB   | #2                                                                                |   2% [A[A[A
+
+nodejs-16.13.2       | 15.3 MB   | #######                                                                           |   9% [A[Apillow-10.3.0        | 40.5 MB   | #####7                                                                            |   7% 
+python-3.9.19        | 22.7 MB   | ##############                                                                    |  17% [A
+
+nodejs-16.13.2       | 15.3 MB   | #########6                                                                        |  12% [A[A
+
+
+bokeh-2.4.2          | 13.8 MB   | ###5                                                                              |   4% [A[A[Apillow-10.3.0        | 40.5 MB   | ######4                                                                           |   8% 
+
+
+
+icu-69.1             | 13.2 MB   | ##################3                                                               |  23% [A[A[A[A
+
+nodejs-16.13.2       | 15.3 MB   | ###########9                                                                      |  15% [A[A
+
+
+bokeh-2.4.2          | 13.8 MB   | ######8                                                                           |   9% [A[A[Apillow-10.3.0        | 40.5 MB   | #######2                                                                          |   9% 
+python-3.9.19        | 22.7 MB   | ###############5                                                                  |  19% [A
+
+nodejs-16.13.2       | 15.3 MB   | ##############4                                                                   |  18% [A[A
+
+
+
+icu-69.1             | 13.2 MB   | ####################                                                              |  25% [A[A[A[Apillow-10.3.0        | 40.5 MB   | #######9                                                                          |  10% 
+
+
+bokeh-2.4.2          | 13.8 MB   | #########5                                                                        |  12% [A[A[A
+python-3.9.19        | 22.7 MB   | ################7                                                                 |  21% [A
+
+nodejs-16.13.2       | 15.3 MB   | #################7                                                                |  22% [A[Apillow-10.3.0        | 40.5 MB   | ########6                                                                         |  11% 
+
+
+bokeh-2.4.2          | 13.8 MB   | #############9                                                                    |  17% [A[A[A
+
+
+
+icu-69.1             | 13.2 MB   | #####################6                                                            |  27% [A[A[A[A
+python-3.9.19        | 22.7 MB   | ##################                                                                |  22% [A
+
+nodejs-16.13.2       | 15.3 MB   | ####################                                                              |  25% [A[Apillow-10.3.0        | 40.5 MB   | #########4                                                                        |  12% 
+
+
+bokeh-2.4.2          | 13.8 MB   | ##################8                                                               |  23% [A[A[A
+
+
+
+icu-69.1             | 13.2 MB   | #######################3                                                          |  29% [A[A[A[A
+python-3.9.19        | 22.7 MB   | ###################2                                                              |  24% [A
+
+nodejs-16.13.2       | 15.3 MB   | ######################3                                                           |  28% [A[Apillow-10.3.0        | 40.5 MB   | ##########1                                                                       |  13% 
+
+
+bokeh-2.4.2          | 13.8 MB   | #######################                                                           |  28% [A[A[A
+
+
+
+icu-69.1             | 13.2 MB   | #########################2                                                        |  31% [A[A[A[A
+python-3.9.19        | 22.7 MB   | ####################4                                                             |  25% [A
+
+nodejs-16.13.2       | 15.3 MB   | ########################9                                                         |  31% [A[Apillow-10.3.0        | 40.5 MB   | ###########                                                                       |  14% 
+
+
+bokeh-2.4.2          | 13.8 MB   | ###########################                                                       |  33% [A[A[A
+
+
+
+icu-69.1             | 13.2 MB   | ##########################8                                                       |  33% [A[A[A[A
+python-3.9.19        | 22.7 MB   | #####################8                                                            |  27% [A
+
+nodejs-16.13.2       | 15.3 MB   | ###########################3                                                      |  34% [A[Apillow-10.3.0        | 40.5 MB   | ###########8                                                                      |  15% 
+
+
+bokeh-2.4.2          | 13.8 MB   | ##############################7                                                   |  38% [A[A[A
+
+
+
+icu-69.1             | 13.2 MB   | ############################5                                                     |  35% [A[A[A[A
+python-3.9.19        | 22.7 MB   | #######################4                                                          |  29% [A
+
+nodejs-16.13.2       | 15.3 MB   | ##############################4                                                   |  38% [A[Apillow-10.3.0        | 40.5 MB   | #############                                                                     |  16% 
+
+
+bokeh-2.4.2          | 13.8 MB   | ###################################3                                              |  44% [A[A[A
+
+
+
+icu-69.1             | 13.2 MB   | ##############################6                                                   |  38% [A[A[A[A
+python-3.9.19        | 22.7 MB   | #########################                                                         |  31% [A
+
+nodejs-16.13.2       | 15.3 MB   | #################################2                                                |  41% [A[Apillow-10.3.0        | 40.5 MB   | ##############                                                                    |  17% 
+
+
+bokeh-2.4.2          | 13.8 MB   | ########################################3                                         |  50% [A[A[A
+
+
+
+icu-69.1             | 13.2 MB   | ################################5                                                 |  40% [A[A[A[A
+python-3.9.19        | 22.7 MB   | ##########################7                                                       |  33% [A
+
+nodejs-16.13.2       | 15.3 MB   | ####################################1                                             |  45% [A[Apillow-10.3.0        | 40.5 MB   | ###############                                                                   |  19% 
+
+
+bokeh-2.4.2          | 13.8 MB   | ##############################################4                                   |  57% [A[A[A
+
+
+
+icu-69.1             | 13.2 MB   | ##################################4                                               |  42% [A[A[A[A
+python-3.9.19        | 22.7 MB   | ############################2                                                     |  35% [A
+
+nodejs-16.13.2       | 15.3 MB   | #######################################                                           |  48% [A[Apillow-10.3.0        | 40.5 MB   | ###############9                                                                  |  20% 
+
+
+bokeh-2.4.2          | 13.8 MB   | ####################################################2                             |  64% [A[A[A
+
+
+
+icu-69.1             | 13.2 MB   | ####################################2                                             |  45% [A[A[A[A
+python-3.9.19        | 22.7 MB   | #############################6                                                    |  37% [A
+
+nodejs-16.13.2       | 15.3 MB   | ##########################################                                        |  52% [A[Apillow-10.3.0        | 40.5 MB   | ################8                                                                 |  21% 
+
+
+bokeh-2.4.2          | 13.8 MB   | #########################################################3                        |  71% [A[A[A
+python-3.9.19        | 22.7 MB   | ###############################1                                                  |  38% [A
+
+
+
+icu-69.1             | 13.2 MB   | ######################################                                            |  47% [A[A[A[Apillow-10.3.0        | 40.5 MB   | #################7                                                                |  22% 
+
+nodejs-16.13.2       | 15.3 MB   | ############################################8                                     |  55% [A[A
+
+
+bokeh-2.4.2          | 13.8 MB   | ##############################################################2                   |  77% [A[A[A
+python-3.9.19        | 22.7 MB   | ################################5                                                 |  40% [A
+
+
+
+icu-69.1             | 13.2 MB   | #######################################5                                          |  49% [A[A[A[Apillow-10.3.0        | 40.5 MB   | ##################6                                                               |  23% 
+
+
+bokeh-2.4.2          | 13.8 MB   | ##################################################################5               |  82% [A[A[A
+python-3.9.19        | 22.7 MB   | #################################7                                                |  42% [A
+
+nodejs-16.13.2       | 15.3 MB   | ###############################################2                                  |  58% [A[A
+
+
+
+icu-69.1             | 13.2 MB   | ########################################9                                         |  51% [A[A[A[Apillow-10.3.0        | 40.5 MB   | ###################3                                                              |  24% 
+python-3.9.19        | 22.7 MB   | ##################################9                                               |  43% [A
+
+
+bokeh-2.4.2          | 13.8 MB   | ######################################################################4           |  87% [A[A[A
+
+nodejs-16.13.2       | 15.3 MB   | #################################################3                                |  61% [A[Apillow-10.3.0        | 40.5 MB   | ####################                                                              |  25% 
+
+
+
+icu-69.1             | 13.2 MB   | ##########################################1                                       |  52% [A[A[A[A
+python-3.9.19        | 22.7 MB   | ####################################2                                             |  45% [A
+
+
+bokeh-2.4.2          | 13.8 MB   | ##########################################################################6       |  92% [A[A[A
+
+nodejs-16.13.2       | 15.3 MB   | ###################################################3                              |  63% [A[Apillow-10.3.0        | 40.5 MB   | ####################7                                                             |  26% 
+
+
+
+icu-69.1             | 13.2 MB   | ###########################################2                                      |  53% [A[A[A[A
+
+
+bokeh-2.4.2          | 13.8 MB   | ##############################################################################4   |  97% [A[A[A
+python-3.9.19        | 22.7 MB   | #####################################4                                            |  46% [A
+
+nodejs-16.13.2       | 15.3 MB   | #####################################################1                            |  66% [A[Apillow-10.3.0        | 40.5 MB   | #####################4                                                            |  26% 
+
+
+
+icu-69.1             | 13.2 MB   | ############################################5                                     |  55% [A[A[A[A
+python-3.9.19        | 22.7 MB   | ######################################9                                           |  48% [A
+
+nodejs-16.13.2       | 15.3 MB   | #######################################################5                          |  69% [A[Apillow-10.3.0        | 40.5 MB   | ######################4                                                           |  28% 
+
+
+bokeh-2.4.2          | 13.8 MB   | ################################################################################# | 100% [A[A[A
+
+
+
+icu-69.1             | 13.2 MB   | ##############################################1                                   |  57% [A[A[A[A
+python-3.9.19        | 22.7 MB   | ########################################3                                         |  50% [A
+
+nodejs-16.13.2       | 15.3 MB   | ##########################################################3                       |  72% [A[Apillow-10.3.0        | 40.5 MB   | #######################4                                                          |  29% 
+
+
+
+icu-69.1             | 13.2 MB   | ###############################################9                                  |  59% [A[A[A[A
+python-3.9.19        | 22.7 MB   | #########################################7                                        |  51% [A
+
+nodejs-16.13.2       | 15.3 MB   | ############################################################6                     |  75% [A[Apillow-10.3.0        | 40.5 MB   | ########################3                                                         |  30% 
+
+
+
+icu-69.1             | 13.2 MB   | #################################################6                                |  61% [A[A[A[A
+python-3.9.19        | 22.7 MB   | ###########################################3                                      |  53% [A
+
+nodejs-16.13.2       | 15.3 MB   | ###############################################################7                  |  79% [A[Apillow-10.3.0        | 40.5 MB   | #########################6                                                        |  32% 
+
+
+
+icu-69.1             | 13.2 MB   | ###################################################6                              |  64% [A[A[A[A
+python-3.9.19        | 22.7 MB   | ############################################9                                     |  55% [A
+
+
+
+
+numpy-1.21.6         | 6.1 MB    | 2                                                                                 |   0% [A[A[A[A[A
+
+nodejs-16.13.2       | 15.3 MB   | ###################################################################2              |  83% [A[Apillow-10.3.0        | 40.5 MB   | ##########################8                                                       |  33% 
+
+
+
+icu-69.1             | 13.2 MB   | #####################################################3                            |  66% [A[A[A[A
+python-3.9.19        | 22.7 MB   | ##############################################3                                   |  57% [A
+
+
+
+
+numpy-1.21.6         | 6.1 MB    | #######                                                                           |   9% [A[A[A[A[A
+
+nodejs-16.13.2       | 15.3 MB   | ######################################################################            |  87% [A[Apillow-10.3.0        | 40.5 MB   | ###########################8                                                      |  34% 
+
+
+
+icu-69.1             | 13.2 MB   | ######################################################9                           |  68% [A[A[A[A
+python-3.9.19        | 22.7 MB   | ###############################################8                                  |  59% [A
+
+
+
+
+numpy-1.21.6         | 6.1 MB    | #############6                                                                    |  17% [A[A[A[A[A
+
+nodejs-16.13.2       | 15.3 MB   | #########################################################################1        |  90% [A[Apillow-10.3.0        | 40.5 MB   | ############################8                                                     |  36% 
+
+
+
+icu-69.1             | 13.2 MB   | ########################################################6                         |  70% [A[A[A[A
+python-3.9.19        | 22.7 MB   | #################################################2                                |  61% [A
+
+
+
+
+numpy-1.21.6         | 6.1 MB    | ####################                                                              |  25% [A[A[A[A[A
+
+nodejs-16.13.2       | 15.3 MB   | ############################################################################      |  94% [A[Apillow-10.3.0        | 40.5 MB   | #############################8                                                    |  37% 
+
+
+
+icu-69.1             | 13.2 MB   | ##########################################################3                       |  72% [A[A[A[A
+python-3.9.19        | 22.7 MB   | ##################################################7                               |  63% [A
+
+
+
+
+numpy-1.21.6         | 6.1 MB    | ##########################                                                        |  32% [A[A[A[A[A
+
+nodejs-16.13.2       | 15.3 MB   | ###############################################################################1  |  98% [A[Apillow-10.3.0        | 40.5 MB   | ##############################8                                                   |  38% 
+
+
+
+icu-69.1             | 13.2 MB   | ###########################################################9                      |  74% [A[A[A[A
+python-3.9.19        | 22.7 MB   | ####################################################2                             |  65% [A
+
+
+
+
+numpy-1.21.6         | 6.1 MB    | #################################5                                                |  41% [A[A[A[A[Apillow-10.3.0        | 40.5 MB   | ###############################9                                                  |  39% 
+
+
+
+icu-69.1             | 13.2 MB   | ##############################################################2                   |  77% [A[A[A[A
+python-3.9.19        | 22.7 MB   | #####################################################8                            |  66% [A
+
+
+
+
+numpy-1.21.6         | 6.1 MB    | #########################################2                                        |  51% [A[A[A[A[Apillow-10.3.0        | 40.5 MB   | #################################2                                                |  41% 
+
+
+
+icu-69.1             | 13.2 MB   | ################################################################8                 |  80% [A[A[A[A
+python-3.9.19        | 22.7 MB   | #######################################################4                          |  68% [A
+
+
+
+
+numpy-1.21.6         | 6.1 MB    | ################################################8                                 |  60% [A[A[A[A[Apillow-10.3.0        | 40.5 MB   | ##################################5                                               |  43% 
+
+
+
+icu-69.1             | 13.2 MB   | ###################################################################4              |  83% [A[A[A[A
+
+nodejs-16.13.2       | 15.3 MB   | ################################################################################# | 100% [A[A
+python-3.9.19        | 22.7 MB   | #########################################################                         |  70% [A
+
+
+
+
+numpy-1.21.6         | 6.1 MB    | #######################################################9                          |  69% [A[A[A[A[Apillow-10.3.0        | 40.5 MB   | ###################################9                                              |  44% 
+
+
+
+icu-69.1             | 13.2 MB   | ######################################################################3           |  87% [A[A[A[A
+
+
+
+
+
+libuv-1.43.0         | 1.0 MB    | #2                                                                                |   2% [A[A[A[A[A[A
+python-3.9.19        | 22.7 MB   | ##########################################################6                       |  72% [A
+
+
+
+
+numpy-1.21.6         | 6.1 MB    | ###############################################################3                  |  78% [A[A[A[A[A
+
+
+
+
+
+libuv-1.43.0         | 1.0 MB    | #####################################8                                            |  47% [A[A[A[A[A[A
+
+
+
+icu-69.1             | 13.2 MB   | ########################################################################7         |  90% [A[A[A[Apillow-10.3.0        | 40.5 MB   | #####################################1                                            |  46% 
+
+
+
+
+numpy-1.21.6         | 6.1 MB    | ######################################################################6           |  87% [A[A[A[A[A
+python-3.9.19        | 22.7 MB   | ############################################################2                     |  74% [A
+
+
+
+
+
+libuv-1.43.0         | 1.0 MB    | #########################################################################2        |  90% [A[A[A[A[A[A
+
+
+
+icu-69.1             | 13.2 MB   | ###########################################################################1      |  93% [A[A[A[Apillow-10.3.0        | 40.5 MB   | ######################################2                                           |  47% 
+
+
+
+
+numpy-1.21.6         | 6.1 MB    | #############################################################################6    |  96% [A[A[A[A[A
+python-3.9.19        | 22.7 MB   | #############################################################7                    |  76% [A
+
+
+
+icu-69.1             | 13.2 MB   | ##############################################################################    |  96% [A[A[A[A
+
+
+
+
+
+libuv-1.43.0         | 1.0 MB    | ################################################################################# | 100% [A[A[A[A[A[Apillow-10.3.0        | 40.5 MB   | #######################################5                                          |  49% 
+python-3.9.19        | 22.7 MB   | ###############################################################4                  |  78% [Apillow-10.3.0        | 40.5 MB   | ########################################7                                         |  50% 
+
+
+
+
+
+
+libsqlite-3.46.0     | 845 KB    | #5                                                                                |   2% [A[A[A[A[A[A[A
+python-3.9.19        | 22.7 MB   | #################################################################4                |  81% [Apillow-10.3.0        | 40.5 MB   | ##########################################3                                       |  52% 
+
+
+
+
+
+
+libsqlite-3.46.0     | 845 KB    | ###########################################################8                      |  74% [A[A[A[A[A[A[A
+python-3.9.19        | 22.7 MB   | ###################################################################5              |  83% [Apillow-10.3.0        | 40.5 MB   | ###########################################8                                      |  54% 
+python-3.9.19        | 22.7 MB   | #####################################################################6            |  86% [A
+
+
+
+
+
+
+libsqlite-3.46.0     | 845 KB    | ################################################################################# | 100% [A[A[A[A[A[A[Apillow-10.3.0        | 40.5 MB   | #############################################5                                    |  56% 
+
+
+
+
+
+
+
+tornado-6.4.2        | 627 KB    | ##                                                                                |   3% [A[A[A[A[A[A[A[A
+python-3.9.19        | 22.7 MB   | ########################################################################2         |  89% [Apillow-10.3.0        | 40.5 MB   | ###############################################2                                  |  58% 
+python-3.9.19        | 22.7 MB   | ##########################################################################2       |  92% [Apillow-10.3.0        | 40.5 MB   | #################################################                                 |  61% 
+
+
+
+
+
+
+
+tornado-6.4.2        | 627 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+tornado-6.4.2        | 627 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A
+python-3.9.19        | 22.7 MB   | ############################################################################8     |  95% [A
+
+
+
+
+
+
+
+
+freetype-2.12.1      | 620 KB    | ##                                                                                |   3% [A[A[A[A[A[A[A[A[Apillow-10.3.0        | 40.5 MB   | ##################################################6                               |  62% 
+python-3.9.19        | 22.7 MB   | ###############################################################################3  |  98% [A
+
+
+
+
+numpy-1.21.6         | 6.1 MB    | ################################################################################# | 100% [A[A[A[A[Apillow-10.3.0        | 40.5 MB   | ####################################################2                             |  65% 
+
+
+
+
+
+
+
+
+
+libjpeg-turbo-3.0.0  | 604 KB    | ##1                                                                               |   3% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+freetype-2.12.1      | 620 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+freetype-2.12.1      | 620 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+libwebp-base-1.5.0   | 420 KB    | ###                                                                               |   4% [A[A[A[A[A[A[A[A[A[A[Apillow-10.3.0        | 40.5 MB   | ######################################################1                           |  67% 
+
+
+
+
+
+
+
+
+
+libjpeg-turbo-3.0.0  | 604 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libjpeg-turbo-3.0.0  | 604 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+libwebp-base-1.5.0   | 420 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+libwebp-base-1.5.0   | 420 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[Apillow-10.3.0        | 40.5 MB   | ########################################################3                         |  70% 
+
+
+
+
+
+
+
+
+
+
+
+libxcb-1.15          | 375 KB    | ###4                                                                              |   4% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+liblzma-devel-5.6.4  | 370 KB    | ###5                                                                              |   4% [A[A[A[A[A[A[A[A[A[A[A[A[Apillow-10.3.0        | 40.5 MB   | ##########################################################8                       |  73% 
+
+
+
+
+
+
+
+
+
+
+
+
+liblzma-devel-5.6.4  | 370 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libxcb-1.15          | 375 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libxcb-1.15          | 375 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+libuv-1.43.0         | 1.0 MB    | ################################################################################# | 100% [A[A[A[A[A[Apillow-10.3.0        | 40.5 MB   | ############################################################8                     |  75% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libpng-1.6.43        | 281 KB    | ####6                                                                             |   6% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+openjpeg-2.5.2       | 334 KB    | ###8                                                                              |   5% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libpng-1.6.43        | 281 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[Apillow-10.3.0        | 40.5 MB   | ##############################################################7                   |  77% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+openjpeg-2.5.2       | 334 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libtiff-4.6.0        | 276 KB    | ####6                                                                             |   6% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lerc-4.0.0           | 275 KB    | ####7                                                                             |   6% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+icu-69.1             | 13.2 MB   | ################################################################################# | 100% [A[A[A[A
+
+
+
+icu-69.1             | 13.2 MB   | ################################################################################# | 100% [A[A[A[Apillow-10.3.0        | 40.5 MB   | ################################################################5                 |  80% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libtiff-4.6.0        | 276 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lerc-4.0.0           | 275 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lcms2-2.16           | 239 KB    | #####4                                                                            |   7% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+werkzeug-3.1.3       | 238 KB    | #####4                                                                            |   7% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lcms2-2.16           | 239 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Apillow-10.3.0        | 40.5 MB   | ##################################################################8               |  83% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+werkzeug-3.1.3       | 238 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+libsqlite-3.46.0     | 845 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+jinja2-3.1.5         | 110 KB    | ###########7                                                                      |  15% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pyyaml-6.0.2         | 178 KB    | #######2                                                                          |   9% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+jinja2-3.1.5         | 110 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zlib-1.2.13          | 91 KB     | ##############2                                                                   |  18% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pyyaml-6.0.2         | 178 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zlib-1.2.13          | 91 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Apillow-10.3.0        | 40.5 MB   | #####################################################################1            |  85% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xz-tools-5.6.4       | 88 KB     | ##############7                                                                   |  18% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+yaml-0.2.5           | 87 KB     | ##############8                                                                   |  18% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+click-8.1.8          | 83 KB     | ###############6                                                                  |  19% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xz-tools-5.6.4       | 88 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+yaml-0.2.5           | 87 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+click-8.1.8          | 83 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Apillow-10.3.0        | 40.5 MB   | #######################################################################7          |  89% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+flask-3.1.0          | 80 KB     | ################2                                                                 |  20% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libdeflate-1.20      | 70 KB     | ##################5                                                               |  23% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+flask-3.1.0          | 80 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libzlib-1.2.13       | 60 KB     | #####################5                                                            |  27% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libzlib-1.2.13       | 60 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libdeflate-1.20      | 70 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typing_extensions-4. | 39 KB     | #################################4                                                |  41% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typing_extensions-4. | 39 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xz-gpl-tools-5.6.4   | 33 KB     | #######################################8                                          |  49% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Apillow-10.3.0        | 40.5 MB   | #########################################################################9        |  91% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+importlib-metadata-8 | 28 KB     | #############################################5                                    |  56% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xz-gpl-tools-5.6.4   | 33 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+importlib-metadata-8 | 28 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xz-5.6.4             | 23 KB     | ########################################################5                         |  70% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xz-5.6.4             | 23 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Apillow-10.3.0        | 40.5 MB   | ############################################################################      |  94% pillow-10.3.0        | 40.5 MB   | ##############################################################################4   |  97% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+markupsafe-3.0.2     | 22 KB     | #########################################################9                        |  72% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+markupsafe-3.0.2     | 22 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+python-3.9.19        | 22.7 MB   | ################################################################################# | 100% [A
+
+
+
+
+
+
+
+tornado-6.4.2        | 627 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[Apillow-10.3.0        | 40.5 MB   | ################################################################################# | 100% pillow-10.3.0        | 40.5 MB   | ################################################################################# | 100% 
+
+
+
+
+numpy-1.21.6         | 6.1 MB    | ################################################################################# | 100% [A[A[A[A[A
+
+
+
+
+
+
+
+
+freetype-2.12.1      | 620 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libjpeg-turbo-3.0.0  | 604 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+libwebp-base-1.5.0   | 420 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+liblzma-devel-5.6.4  | 370 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+liblzma-devel-5.6.4  | 370 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libxcb-1.15          | 375 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libpng-1.6.43        | 281 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libpng-1.6.43        | 281 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+openjpeg-2.5.2       | 334 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+openjpeg-2.5.2       | 334 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+nodejs-16.13.2       | 15.3 MB   | ################################################################################# | 100% [A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libtiff-4.6.0        | 276 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libtiff-4.6.0        | 276 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lerc-4.0.0           | 275 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lerc-4.0.0           | 275 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lcms2-2.16           | 239 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lcms2-2.16           | 239 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+werkzeug-3.1.3       | 238 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+werkzeug-3.1.3       | 238 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+jinja2-3.1.5         | 110 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+jinja2-3.1.5         | 110 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pyyaml-6.0.2         | 178 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pyyaml-6.0.2         | 178 KB    | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zlib-1.2.13          | 91 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zlib-1.2.13          | 91 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xz-tools-5.6.4       | 88 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xz-tools-5.6.4       | 88 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+bokeh-2.4.2          | 13.8 MB   | ################################################################################# | 100% [A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+yaml-0.2.5           | 87 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+yaml-0.2.5           | 87 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+click-8.1.8          | 83 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+click-8.1.8          | 83 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libzlib-1.2.13       | 60 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libzlib-1.2.13       | 60 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+flask-3.1.0          | 80 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+flask-3.1.0          | 80 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libdeflate-1.20      | 70 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libdeflate-1.20      | 70 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typing_extensions-4. | 39 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typing_extensions-4. | 39 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+importlib-metadata-8 | 28 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+importlib-metadata-8 | 28 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xz-gpl-tools-5.6.4   | 33 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xz-gpl-tools-5.6.4   | 33 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xz-5.6.4             | 23 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xz-5.6.4             | 23 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+markupsafe-3.0.2     | 22 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+markupsafe-3.0.2     | 22 KB     | ################################################################################# | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+icu-69.1             | 13.2 MB   | ################################################################################# | 100% [A[A[A[Apillow-10.3.0        | 40.5 MB   | ################################################################################# | 100% 
+python-3.9.19        | 22.7 MB   | ################################################################################# | 100% [A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A                                                                                                                            
+                                                                                                                            [A
+
+                                                                                                                            [A[A
+
+
+                                                                                                                            [A[A[A
+
+
+
+                                                                                                                            [A[A[A[A
+
+
+
+
+                                                                                                                            [A[A[A[A[A
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                            [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+[A
+
+[A[A
+
+
+[A[A[A
+
+
+
+[A[A[A[A
+
+
+
+
+[A[A[A[A[A
+Preparing transaction: - \ | / - \ done
+Verifying transaction: / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - done
+Executing transaction: | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | done
+Installing pip dependencies: - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / Ran pip subprocess with arguments:
+['/home/sathiyabama/miniforge3/envs/assignment1.3/bin/python', '-m', 'pip', 'install', '-U', '-r', '/home/sathiyabama/miniforge3/condaenv._0wp0fws.requirements.txt', '--exists-action=b']
+Pip subprocess output:
+Collecting Flask-Testing (from -r /home/sathiyabama/miniforge3/condaenv._0wp0fws.requirements.txt (line 1))
+  Downloading Flask-Testing-0.8.1.tar.gz (45 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: Flask in ./envs/assignment1.3/lib/python3.9/site-packages (from Flask-Testing->-r /home/sathiyabama/miniforge3/condaenv._0wp0fws.requirements.txt (line 1)) (3.1.0)
+Requirement already satisfied: Werkzeug>=3.1 in ./envs/assignment1.3/lib/python3.9/site-packages (from Flask->Flask-Testing->-r /home/sathiyabama/miniforge3/condaenv._0wp0fws.requirements.txt (line 1)) (3.1.3)
+Requirement already satisfied: Jinja2>=3.1.2 in ./envs/assignment1.3/lib/python3.9/site-packages (from Flask->Flask-Testing->-r /home/sathiyabama/miniforge3/condaenv._0wp0fws.requirements.txt (line 1)) (3.1.5)
+Requirement already satisfied: itsdangerous>=2.2 in ./envs/assignment1.3/lib/python3.9/site-packages (from Flask->Flask-Testing->-r /home/sathiyabama/miniforge3/condaenv._0wp0fws.requirements.txt (line 1)) (2.2.0)
+Requirement already satisfied: click>=8.1.3 in ./envs/assignment1.3/lib/python3.9/site-packages (from Flask->Flask-Testing->-r /home/sathiyabama/miniforge3/condaenv._0wp0fws.requirements.txt (line 1)) (8.1.8)
+Requirement already satisfied: blinker>=1.9 in ./envs/assignment1.3/lib/python3.9/site-packages (from Flask->Flask-Testing->-r /home/sathiyabama/miniforge3/condaenv._0wp0fws.requirements.txt (line 1)) (1.9.0)
+Requirement already satisfied: importlib-metadata>=3.6 in ./envs/assignment1.3/lib/python3.9/site-packages (from Flask->Flask-Testing->-r /home/sathiyabama/miniforge3/condaenv._0wp0fws.requirements.txt (line 1)) (8.6.1)
+Requirement already satisfied: zipp>=3.20 in ./envs/assignment1.3/lib/python3.9/site-packages (from importlib-metadata>=3.6->Flask->Flask-Testing->-r /home/sathiyabama/miniforge3/condaenv._0wp0fws.requirements.txt (line 1)) (3.21.0)
+Requirement already satisfied: MarkupSafe>=2.0 in ./envs/assignment1.3/lib/python3.9/site-packages (from Jinja2>=3.1.2->Flask->Flask-Testing->-r /home/sathiyabama/miniforge3/condaenv._0wp0fws.requirements.txt (line 1)) (3.0.2)
+Building wheels for collected packages: Flask-Testing
+  Building wheel for Flask-Testing (setup.py): started
+  Building wheel for Flask-Testing (setup.py): finished with status 'done'
+  Created wheel for Flask-Testing: filename=Flask_Testing-0.8.1-py3-none-any.whl size=8246 sha256=b58ceddae72f76e4ac41bc36ce94be612ba234361697240777aa43a0f83ba3c9
+  Stored in directory: /home/sathiyabama/.cache/pip/wheels/56/2c/e8/52cd7ac36504f43401afd952a869548effc5d22245d582521b
+Successfully built Flask-Testing
+Installing collected packages: Flask-Testing
+Successfully installed Flask-Testing-0.8.1
+
+done
+#
+# To activate this environment, use
+#
+#     $ conda activate assignment1.3
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+[?2004h(Tamplep) ]0;sathiyabama@TIGER06186: ~/miniforge3[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3[00m$ conda activet[K[Kate ^C[?2004l[?2004h[?2004l
+[?2004h(Tamplep) ]0;sathiyabama@TIGER06186: ~/miniforge3[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3[00m$ [7m conda activate assignment1.3[27m conda activate assignment1.3
+[?2004l[?2004h(assignment1.3) ]0;sathiyabama@TIGER06186: ~/miniforge3[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3[00m$ v[Kconda info --envs
+[?2004l
+# conda environments:
+#
+base                   /home/sathiyabama/miniforge3
+Tamplep                /home/sathiyabama/miniforge3/envs/Tamplep
+assignment1.3        * /home/sathiyabama/miniforge3/envs/assignment1.3
+stats                  /home/sathiyabama/miniforge3/envs/stats
+test_env               /home/sathiyabama/miniforge3/envs/test_env
+
+[?2004h(assignment1.3) ]0;sathiyabama@TIGER06186: ~/miniforge3[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3[00m$ [7mconda list -n myenv scipy[27mconda list -n myenv scipy[1P scipy[1P scipy[1P scipy[1P scipy[1P scipyt scipy[1P scipyT scipya scipym scipyp scipyl scipye scipyp scipy[C scipy[C[C[C[C[C[C
+[?2004l# packages in environment at /home/sathiyabama/miniforge3/envs/Tamplep:
+#
+# Name                    Version                   Build  Channel
+[?2004h(assignment1.3) ]0;sathiyabama@TIGER06186: ~/miniforge3[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3[00m$ [7mconda search python[27mconda search python
+[?2004lLoading channels: - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ done
+# Name                       Version           Build  Channel             
+python                         1.0.1               0  conda-forge         
+python                           1.2               0  conda-forge         
+python                           1.3               0  conda-forge         
+python                           1.4               0  conda-forge         
+python                         1.5.2               0  conda-forge         
+python                           1.6               0  conda-forge         
+python                           2.0               0  conda-forge         
+python                         2.6.9               0  conda-forge         
+python                        2.7.12               0  conda-forge         
+python                        2.7.12               1  conda-forge         
+python                        2.7.12               2  conda-forge         
+python                        2.7.13               0  conda-forge         
+python                        2.7.13               1  conda-forge         
+python                        2.7.14               0  conda-forge         
+python                        2.7.14               1  conda-forge         
+python                        2.7.14               2  conda-forge         
+python                        2.7.14               3  conda-forge         
+python                        2.7.14               4  conda-forge         
+python                        2.7.14               5  conda-forge         
+python                        2.7.15               0  conda-forge         
+python                        2.7.15      h33da82c_1  conda-forge         
+python                        2.7.15      h33da82c_3  conda-forge         
+python                        2.7.15      h33da82c_4  conda-forge         
+python                        2.7.15      h33da82c_5  conda-forge         
+python                        2.7.15      h33da82c_6  conda-forge         
+python                        2.7.15   h5a48372_1009  conda-forge         
+python                        2.7.15 h5a48372_1010_cpython  conda-forge         
+python                        2.7.15 h5a48372_1011_cpython  conda-forge         
+python                        2.7.15   h721da81_1008  conda-forge         
+python                        2.7.15   h938d71a_1001  conda-forge         
+python                        2.7.15   h938d71a_1002  conda-forge         
+python                        2.7.15   h938d71a_1003  conda-forge         
+python                        2.7.15   h938d71a_1004  conda-forge         
+python                        2.7.15   h938d71a_1005  conda-forge         
+python                        2.7.15   h938d71a_1006  conda-forge         
+python                        2.7.15      h9fef7bc_0  conda-forge         
+python                         3.4.5               0  conda-forge         
+python                         3.4.5               1  conda-forge         
+python                         3.4.5               2  conda-forge         
+python                         3.5.1               0  conda-forge         
+python                         3.5.1               1  conda-forge         
+python                         3.5.2               0  conda-forge         
+python                         3.5.2               1  conda-forge         
+python                         3.5.2               2  conda-forge         
+python                         3.5.2               4  conda-forge         
+python                         3.5.2               5  conda-forge         
+python                         3.5.3               0  conda-forge         
+python                         3.5.3               1  conda-forge         
+python                         3.5.3               2  conda-forge         
+python                         3.5.3               3  conda-forge         
+python                         3.5.4               0  conda-forge         
+python                         3.5.4               1  conda-forge         
+python                         3.5.4               2  conda-forge         
+python                         3.5.4               3  conda-forge         
+python                         3.5.5               0  conda-forge         
+python                         3.5.5               1  conda-forge         
+python                         3.5.5      h5001a0f_2  conda-forge         
+python                       3.6.0a3               0  conda-forge         
+python                       3.6.0a4               0  conda-forge         
+python                       3.6.0b1               0  conda-forge         
+python                       3.6.0b2               0  conda-forge         
+python                       3.6.0b2               1  conda-forge         
+python                       3.6.0b3               0  conda-forge         
+python                       3.6.0b4               0  conda-forge         
+python                      3.6.0rc1               0  conda-forge         
+python                         3.6.0               0  conda-forge         
+python                         3.6.0               1  conda-forge         
+python                         3.6.0               2  conda-forge         
+python                         3.6.1               0  conda-forge         
+python                         3.6.1               1  conda-forge         
+python                         3.6.1               2  conda-forge         
+python                         3.6.1               3  conda-forge         
+python                         3.6.2               0  conda-forge         
+python                         3.6.3               0  conda-forge         
+python                         3.6.3               1  conda-forge         
+python                         3.6.3               2  conda-forge         
+python                         3.6.3               3  conda-forge         
+python                         3.6.3               4  conda-forge         
+python                         3.6.4               0  conda-forge         
+python                         3.6.5               0  conda-forge         
+python                         3.6.5               1  conda-forge         
+python                         3.6.6      h5001a0f_0  conda-forge         
+python                         3.6.6      h5001a0f_2  conda-forge         
+python                         3.6.6      h5001a0f_3  conda-forge         
+python                         3.6.6   hd21baee_1000  conda-forge         
+python                         3.6.6   hd21baee_1001  conda-forge         
+python                         3.6.6   hd21baee_1002  conda-forge         
+python                         3.6.6   hd21baee_1003  conda-forge         
+python                         3.6.7   h357f687_1005  conda-forge         
+python                         3.6.7   h357f687_1006  conda-forge         
+python                         3.6.7 h357f687_1008_cpython  conda-forge         
+python                         3.6.7   h381d211_1004  conda-forge         
+python                         3.6.7      h5001a0f_0  conda-forge         
+python                         3.6.7      h5001a0f_1  conda-forge         
+python                         3.6.7   hd21baee_1000  conda-forge         
+python                         3.6.7   hd21baee_1001  conda-forge         
+python                         3.6.7   hd21baee_1002  conda-forge         
+python                         3.6.9       0_73_pypy  conda-forge         
+python                         3.6.9       2_73_pypy  conda-forge         
+python                         3.6.9       3_73_pypy  conda-forge         
+python                         3.6.9 h9d8adfe_0_cpython  conda-forge         
+python                        3.6.10 h8356626_1010_cpython  conda-forge         
+python                        3.6.10 h8356626_1011_cpython  conda-forge         
+python                        3.6.10 h9d8adfe_1009_cpython  conda-forge         
+python                        3.6.10 he5300dc_1010_cpython  conda-forge         
+python                        3.6.10 he5300dc_1011_cpython  conda-forge         
+python                        3.6.11 h425cb1d_0_cpython  conda-forge         
+python                        3.6.11 h425cb1d_1_cpython  conda-forge         
+python                        3.6.11 h425cb1d_2_cpython  conda-forge         
+python                        3.6.11 h4d41432_0_cpython  conda-forge         
+python                        3.6.11 h4d41432_1_cpython  conda-forge         
+python                        3.6.11 h4d41432_2_cpython  conda-forge         
+python                        3.6.11 h6f2ec95_0_cpython  conda-forge         
+python                        3.6.11 h6f2ec95_1_cpython  conda-forge         
+python                        3.6.11 h6f2ec95_2_cpython  conda-forge         
+python                        3.6.11 hffdb5ce_3_cpython  conda-forge         
+python                        3.6.12       4_73_pypy  conda-forge         
+python                        3.6.12       5_73_pypy  conda-forge         
+python                        3.6.12 hffdb5ce_0_cpython  conda-forge         
+python                        3.6.13 hb7a2778_1_cpython  conda-forge         
+python                        3.6.13 hb7a2778_2_cpython  conda-forge         
+python                        3.6.13 hffdb5ce_0_cpython  conda-forge         
+python                        3.6.15 hb7a2778_0_cpython  conda-forge         
+python                         3.7.0      h5001a0f_0  conda-forge         
+python                         3.7.0      h5001a0f_1  conda-forge         
+python                         3.7.0      h5001a0f_4  conda-forge         
+python                         3.7.0      h5001a0f_6  conda-forge         
+python                         3.7.0   hd21baee_1002  conda-forge         
+python                         3.7.0   hd21baee_1003  conda-forge         
+python                         3.7.0   hd21baee_1004  conda-forge         
+python                         3.7.0   hd21baee_1005  conda-forge         
+python                         3.7.0   hd21baee_1006  conda-forge         
+python                         3.7.0      hfd72cd7_0  conda-forge         
+python                         3.7.1   h381d211_1002  conda-forge         
+python                         3.7.1   h381d211_1003  conda-forge         
+python                         3.7.1      h5001a0f_0  conda-forge         
+python                         3.7.1   hd21baee_1000  conda-forge         
+python                         3.7.1   hd21baee_1001  conda-forge         
+python                         3.7.2      h381d211_0  conda-forge         
+python                         3.7.3      h33d41f4_1  conda-forge         
+python                         3.7.3      h357f687_2  conda-forge         
+python                         3.7.3      h5b0a415_0  conda-forge         
+python                         3.7.5 hffdb5ce_0_cpython  conda-forge         
+python                         3.7.6 cpython_h8356626_6  conda-forge         
+python                         3.7.6 cpython_he5300dc_6  conda-forge         
+python                         3.7.6      h357f687_1  conda-forge         
+python                         3.7.6      h357f687_2  conda-forge         
+python                         3.7.6 h357f687_3_cpython  conda-forge         
+python                         3.7.6 h357f687_4_cpython  conda-forge         
+python                         3.7.6 h8356626_5_cpython  conda-forge         
+python                         3.7.6 he5300dc_5_cpython  conda-forge         
+python                         3.7.8 h425cb1d_0_cpython  conda-forge         
+python                         3.7.8 h425cb1d_1_cpython  conda-forge         
+python                         3.7.8 h4d41432_0_cpython  conda-forge         
+python                         3.7.8 h4d41432_1_cpython  conda-forge         
+python                         3.7.8 h6238437_2_cpython  conda-forge         
+python                         3.7.8 h6f2ec95_0_cpython  conda-forge         
+python                         3.7.8 h6f2ec95_1_cpython  conda-forge         
+python                         3.7.8 h8bdb77d_2_cpython  conda-forge         
+python                         3.7.8 hdad413e_2_cpython  conda-forge         
+python                         3.7.8 hffdb5ce_3_cpython  conda-forge         
+python                         3.7.9       4_73_pypy  conda-forge         
+python                         3.7.9       5_73_pypy  conda-forge         
+python                         3.7.9 hffdb5ce_0_cpython  conda-forge         
+python                         3.7.9 hffdb5ce_100_cpython  conda-forge         
+python                        3.7.10       0_73_pypy  conda-forge         
+python                        3.7.10       1_73_pypy  conda-forge         
+python                        3.7.10 hb7a2778_101_cpython  conda-forge         
+python                        3.7.10 hb7a2778_102_cpython  conda-forge         
+python                        3.7.10 hb7a2778_103_cpython  conda-forge         
+python                        3.7.10 hb7a2778_104_cpython  conda-forge         
+python                        3.7.10 hf930737_102_cpython  conda-forge         
+python                        3.7.10 hf930737_103_cpython  conda-forge         
+python                        3.7.10 hf930737_104_cpython  conda-forge         
+python                        3.7.10 hffdb5ce_100_cpython  conda-forge         
+python                        3.7.12       0_73_pypy  conda-forge         
+python                        3.7.12 hb7a2778_100_cpython  conda-forge         
+python                        3.7.12 hf930737_100_cpython  conda-forge         
+python                         3.8.0      h357f687_0  conda-forge         
+python                         3.8.0      h357f687_1  conda-forge         
+python                         3.8.0      h357f687_2  conda-forge         
+python                         3.8.0      h357f687_3  conda-forge         
+python                         3.8.0      h357f687_4  conda-forge         
+python                         3.8.0      h357f687_5  conda-forge         
+python                         3.8.1      h357f687_1  conda-forge         
+python                         3.8.1      h357f687_2  conda-forge         
+python                         3.8.2 h8356626_5_cpython  conda-forge         
+python                         3.8.2 h8356626_6_cpython  conda-forge         
+python                         3.8.2 h8356626_7_cpython  conda-forge         
+python                         3.8.2 h9d8adfe_4_cpython  conda-forge         
+python                         3.8.2 he5300dc_5_cpython  conda-forge         
+python                         3.8.2 he5300dc_6_cpython  conda-forge         
+python                         3.8.2 he5300dc_7_cpython  conda-forge         
+python                         3.8.3 cpython_h8356626_0  conda-forge         
+python                         3.8.3 cpython_he5300dc_0  conda-forge         
+python                         3.8.4 cpython_h425cb1d_0  conda-forge         
+python                         3.8.4 cpython_h6f2ec95_0  conda-forge         
+python                         3.8.5 0_native223_graalpy  conda-forge         
+python                         3.8.5 cpython_h425cb1d_0  conda-forge         
+python                         3.8.5 cpython_h4d41432_0  conda-forge         
+python                         3.8.5 cpython_h6f2ec95_0  conda-forge         
+python                         3.8.5      h1103e12_2  conda-forge         
+python                         3.8.5 h1103e12_3_cpython  conda-forge         
+python                         3.8.5 h1103e12_4_cpython  conda-forge         
+python                         3.8.5 h1103e12_5_cpython  conda-forge         
+python                         3.8.5 h1103e12_6_cpython  conda-forge         
+python                         3.8.5 h1103e12_7_cpython  conda-forge         
+python                         3.8.5 h1103e12_8_cpython  conda-forge         
+python                         3.8.5 h1103e12_9_cpython  conda-forge         
+python                         3.8.5 h425cb1d_1_cpython  conda-forge         
+python                         3.8.5 h425cb1d_2_cpython  conda-forge         
+python                         3.8.5 h4d41432_1_cpython  conda-forge         
+python                         3.8.5 h4d41432_2_cpython  conda-forge         
+python                         3.8.5 h6f2ec95_1_cpython  conda-forge         
+python                         3.8.5 h6f2ec95_2_cpython  conda-forge         
+python                         3.8.6 h852b56e_0_cpython  conda-forge         
+python                         3.8.6 hffdb5ce_1_cpython  conda-forge         
+python                         3.8.6 hffdb5ce_2_cpython  conda-forge         
+python                         3.8.6 hffdb5ce_3_cpython  conda-forge         
+python                         3.8.6 hffdb5ce_4_cpython  conda-forge         
+python                         3.8.6 hffdb5ce_5_cpython  conda-forge         
+python                         3.8.8 hffdb5ce_0_cpython  conda-forge         
+python                        3.8.10 h49503c6_1_cpython  conda-forge         
+python                        3.8.10 hb7a2778_2_cpython  conda-forge         
+python                        3.8.10 hffdb5ce_0_cpython  conda-forge         
+python                        3.8.12       0_73_pypy  conda-forge         
+python                        3.8.12 h0744224_3_cpython  conda-forge         
+python                        3.8.12 ha38a3c6_3_cpython  conda-forge         
+python                        3.8.12 hb7a2778_0_cpython  conda-forge         
+python                        3.8.12 hb7a2778_1_cpython  conda-forge         
+python                        3.8.12 hb7a2778_2_cpython  conda-forge         
+python                        3.8.12 hf930737_1_cpython  conda-forge         
+python                        3.8.12 hf930737_2_cpython  conda-forge         
+python                        3.8.13       0_73_pypy  conda-forge         
+python                        3.8.13 h582c2e5_0_cpython  conda-forge         
+python                        3.8.13 ha86cf86_0_cpython  conda-forge         
+python                        3.8.14 h257c98d_0_cpython  conda-forge         
+python                        3.8.14 h4a9ceb5_0_cpython  conda-forge         
+python                        3.8.15 h257c98d_0_cpython  conda-forge         
+python                        3.8.15 h4a9ceb5_0_cpython  conda-forge         
+python                        3.8.15 he550d4f_1_cpython  conda-forge         
+python                        3.8.16       0_73_pypy  conda-forge         
+python                        3.8.16 he550d4f_1_cpython  conda-forge         
+python                        3.8.17 he550d4f_0_cpython  conda-forge         
+python                        3.8.18 hd12c33a_0_cpython  conda-forge         
+python                        3.8.18 hd12c33a_1_cpython  conda-forge         
+python                        3.8.19 hd12c33a_0_cpython  conda-forge         
+python                        3.8.20 h4a871b0_0_cpython  conda-forge         
+python                        3.8.20 h4a871b0_1_cpython  conda-forge         
+python                        3.8.20 h4a871b0_2_cpython  conda-forge         
+python                         3.9.0 h2a148a8_4_cpython  conda-forge         
+python                         3.9.0 h852b56e_1_cpython  conda-forge         
+python                         3.9.0 h852b56e_2_cpython  conda-forge         
+python                         3.9.0 h852b56e_3_cpython  conda-forge         
+python                         3.9.0 hffdb5ce_5_cpython  conda-forge         
+python                         3.9.1 hffdb5ce_0_cpython  conda-forge         
+python                         3.9.1 hffdb5ce_1_cpython  conda-forge         
+python                         3.9.1 hffdb5ce_2_cpython  conda-forge         
+python                         3.9.1 hffdb5ce_3_cpython  conda-forge         
+python                         3.9.1 hffdb5ce_4_cpython  conda-forge         
+python                         3.9.1 hffdb5ce_5_cpython  conda-forge         
+python                         3.9.2 hffdb5ce_0_cpython  conda-forge         
+python                         3.9.4 hffdb5ce_0_cpython  conda-forge         
+python                         3.9.5 h49503c6_0_cpython  conda-forge         
+python                         3.9.6 h49503c6_0_cpython  conda-forge         
+python                         3.9.6 h49503c6_1_cpython  conda-forge         
+python                         3.9.7 h49503c6_0_cpython  conda-forge         
+python                         3.9.7 hb7a2778_1_cpython  conda-forge         
+python                         3.9.7 hb7a2778_2_cpython  conda-forge         
+python                         3.9.7 hb7a2778_3_cpython  conda-forge         
+python                         3.9.7 hf930737_3_cpython  conda-forge         
+python                         3.9.9 h543edf9_0_cpython  conda-forge         
+python                         3.9.9 h62f1059_0_cpython  conda-forge         
+python                        3.9.10       0_73_pypy  conda-forge         
+python                        3.9.10 h85951f9_0_cpython  conda-forge         
+python                        3.9.10 h85951f9_1_cpython  conda-forge         
+python                        3.9.10 h85951f9_2_cpython  conda-forge         
+python                        3.9.10 hc74c709_0_cpython  conda-forge         
+python                        3.9.10 hc74c709_1_cpython  conda-forge         
+python                        3.9.10 hc74c709_2_cpython  conda-forge         
+python                        3.9.12       0_73_pypy  conda-forge         
+python                        3.9.12 h2660328_0_cpython  conda-forge         
+python                        3.9.12 h2660328_1_cpython  conda-forge         
+python                        3.9.12 h9a8a25e_0_cpython  conda-forge         
+python                        3.9.12 h9a8a25e_1_cpython  conda-forge         
+python                        3.9.13 h2660328_0_cpython  conda-forge         
+python                        3.9.13 h9a8a25e_0_cpython  conda-forge         
+python                        3.9.14 h47a2c10_0_cpython  conda-forge         
+python                        3.9.14 hba424b6_0_cpython  conda-forge         
+python                        3.9.15 h47a2c10_0_cpython  conda-forge         
+python                        3.9.15 hba424b6_0_cpython  conda-forge         
+python                        3.9.16       0_73_pypy  conda-forge         
+python                        3.9.16 h2782a2a_0_cpython  conda-forge         
+python                        3.9.17       0_73_pypy  conda-forge         
+python                        3.9.17 h0755675_0_cpython  conda-forge         
+python                        3.9.18       0_73_pypy  conda-forge         
+python                        3.9.18       1_73_pypy  conda-forge         
+python                        3.9.18 h0755675_0_cpython  conda-forge         
+python                        3.9.18 h0755675_1_cpython  conda-forge         
+python                        3.9.19 h0755675_0_cpython  conda-forge         
+python                        3.9.20 h13acc7a_0_cpython  conda-forge         
+python                        3.9.20 h13acc7a_1_cpython  conda-forge         
+python                        3.9.21 h9c0c6dc_1_cpython  conda-forge         
+python                        3.10.0 h543edf9_1_cpython  conda-forge         
+python                        3.10.0 h543edf9_2_cpython  conda-forge         
+python                        3.10.0 h543edf9_3_cpython  conda-forge         
+python                        3.10.0 h62f1059_1_cpython  conda-forge         
+python                        3.10.0 h62f1059_2_cpython  conda-forge         
+python                        3.10.0 h62f1059_3_cpython  conda-forge         
+python                        3.10.1 h543edf9_0_cpython  conda-forge         
+python                        3.10.1 h543edf9_1_cpython  conda-forge         
+python                        3.10.1 h543edf9_2_cpython  conda-forge         
+python                        3.10.1 h62f1059_0_cpython  conda-forge         
+python                        3.10.1 h62f1059_1_cpython  conda-forge         
+python                        3.10.1 h62f1059_2_cpython  conda-forge         
+python                        3.10.2 h543edf9_0_cpython  conda-forge         
+python                        3.10.2 h62f1059_0_cpython  conda-forge         
+python                        3.10.2 h85951f9_1_cpython  conda-forge         
+python                        3.10.2 h85951f9_2_cpython  conda-forge         
+python                        3.10.2 h85951f9_3_cpython  conda-forge         
+python                        3.10.2 h85951f9_4_cpython  conda-forge         
+python                        3.10.2 hc74c709_1_cpython  conda-forge         
+python                        3.10.2 hc74c709_2_cpython  conda-forge         
+python                        3.10.2 hc74c709_3_cpython  conda-forge         
+python                        3.10.2 hc74c709_4_cpython  conda-forge         
+python                        3.10.4 h2660328_0_cpython  conda-forge         
+python                        3.10.4 h9a8a25e_0_cpython  conda-forge         
+python                        3.10.5 h582c2e5_0_cpython  conda-forge         
+python                        3.10.5 ha86cf86_0_cpython  conda-forge         
+python                        3.10.6 h582c2e5_0_cpython  conda-forge         
+python                        3.10.6 ha86cf86_0_cpython  conda-forge         
+python                        3.10.7 h257c98d_0_cpython  conda-forge         
+python                        3.10.7 h4a9ceb5_0_cpython  conda-forge         
+python                        3.10.8 0_native230_graalpy  conda-forge         
+python                        3.10.8 h257c98d_0_cpython  conda-forge         
+python                        3.10.8 h4a9ceb5_0_cpython  conda-forge         
+python                        3.10.9 he550d4f_0_cpython  conda-forge         
+python                       3.10.10 he550d4f_0_cpython  conda-forge         
+python                       3.10.11 he550d4f_0_cpython  conda-forge         
+python                       3.10.12 hd12c33a_0_cpython  conda-forge         
+python                       3.10.13 hd12c33a_0_cpython  conda-forge         
+python                       3.10.13 hd12c33a_1_cpython  conda-forge         
+python                       3.10.14 hd12c33a_0_cpython  conda-forge         
+python                       3.10.15 h4a871b0_0_cpython  conda-forge         
+python                       3.10.15 h4a871b0_1_cpython  conda-forge         
+python                       3.10.15 h4a871b0_2_cpython  conda-forge         
+python                       3.10.16 he725a3c_1_cpython  conda-forge         
+python                        3.11.0 h10a6764_1_cpython  conda-forge         
+python                        3.11.0 h582c2e5_0_cpython  conda-forge         
+python                        3.11.0 ha86cf86_0_cpython  conda-forge         
+python                        3.11.0 he550d4f_1_cpython  conda-forge         
+python                        3.11.1 h2755cc3_0_cpython  conda-forge         
+python                        3.11.2 h2755cc3_0_cpython  conda-forge         
+python                        3.11.3 h2755cc3_0_cpython  conda-forge         
+python                        3.11.4 hab00c5b_0_cpython  conda-forge         
+python                        3.11.5 hab00c5b_0_cpython  conda-forge         
+python                        3.11.6 hab00c5b_0_cpython  conda-forge         
+python                        3.11.7 hab00c5b_0_cpython  conda-forge         
+python                        3.11.7 hab00c5b_1_cpython  conda-forge         
+python                        3.11.8 hab00c5b_0_cpython  conda-forge         
+python                        3.11.9 hb806964_0_cpython  conda-forge         
+python                       3.11.10 hc5c86c4_0_cpython  conda-forge         
+python                       3.11.10 hc5c86c4_1_cpython  conda-forge         
+python                       3.11.10 hc5c86c4_2_cpython  conda-forge         
+python                       3.11.10 hc5c86c4_3_cpython  conda-forge         
+python                       3.11.11 h9e4cc4f_1_cpython  conda-forge         
+python                     3.12.0rc3 rc3_hab00c5b_1_cpython  conda-forge         
+python                        3.12.0 hab00c5b_0_cpython  conda-forge         
+python                        3.12.1 hab00c5b_0_cpython  conda-forge         
+python                        3.12.1 hab00c5b_1_cpython  conda-forge         
+python                        3.12.2 hab00c5b_0_cpython  conda-forge         
+python                        3.12.3 hab00c5b_0_cpython  conda-forge         
+python                        3.12.4 h194c7f8_0_cpython  conda-forge         
+python                        3.12.5 h2ad013b_0_cpython  conda-forge         
+python                        3.12.6 hc5c86c4_0_cpython  conda-forge         
+python                        3.12.6 hc5c86c4_1_cpython  conda-forge         
+python                        3.12.6 hc5c86c4_2_cpython  conda-forge         
+python                        3.12.7 hc5c86c4_0_cpython  conda-forge         
+python                        3.12.8 h9e4cc4f_1_cpython  conda-forge         
+python                     3.13.0rc1 h3b4618f_0_cp313t  conda-forge         
+python                     3.13.0rc1 h3b4618f_1_cp313t  conda-forge         
+python                     3.13.0rc1 h3b4618f_2_cp313t  conda-forge         
+python                     3.13.0rc1 he2a0704_100_cp313  conda-forge         
+python                     3.13.0rc1 he2a0704_101_cp313  conda-forge         
+python                     3.13.0rc1 he2a0704_102_cp313  conda-forge         
+python                     3.13.0rc2 h6355ac2_0_cp313t  conda-forge         
+python                     3.13.0rc2 h6355ac2_1_cp313t  conda-forge         
+python                     3.13.0rc2 h6355ac2_2_cp313t  conda-forge         
+python                     3.13.0rc2 h6355ac2_3_cp313t  conda-forge         
+python                     3.13.0rc2 h9ebbce0_100_cp313  conda-forge         
+python                     3.13.0rc2 h9ebbce0_101_cp313  conda-forge         
+python                     3.13.0rc2 h9ebbce0_102_cp313  conda-forge         
+python                     3.13.0rc2 h9ebbce0_103_cp313  conda-forge         
+python                     3.13.0rc3 h6355ac2_0_cp313t  conda-forge         
+python                     3.13.0rc3 h9ebbce0_100_cp313  conda-forge         
+python                        3.13.0 h6355ac2_0_cp313t  conda-forge         
+python                        3.13.0 h6355ac2_1_cp313t  conda-forge         
+python                        3.13.0 h9ebbce0_100_cp313  conda-forge         
+python                        3.13.0 h9ebbce0_101_cp313  conda-forge         
+python                        3.13.1 h9a34b6e_1_cp313t  conda-forge         
+python                        3.13.1 h9a34b6e_2_cp313t  conda-forge         
+python                        3.13.1 h9a34b6e_3_cp313t  conda-forge         
+python                        3.13.1 h9a34b6e_4_cp313t  conda-forge         
+python                        3.13.1 h9a34b6e_5_cp313t  conda-forge         
+python                        3.13.1 ha99a958_101_cp313  conda-forge         
+python                        3.13.1 ha99a958_102_cp313  conda-forge         
+python                        3.13.1 ha99a958_103_cp313  conda-forge         
+python                        3.13.1 ha99a958_104_cp313  conda-forge         
+python                        3.13.1 ha99a958_105_cp313  conda-forge         
+[?2004h(assignment1.3) ]0;sathiyabama@TIGER06186: ~/miniforge3[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3[00m$ o[Kconda info
+[?2004l
+     active environment : assignment1.3
+    active env location : /home/sathiyabama/miniforge3/envs/assignment1.3
+            shell level : 3
+       user config file : /home/sathiyabama/.condarc
+ populated config files : /home/sathiyabama/miniforge3/.condarc
+          conda version : 24.11.3
+    conda-build version : not installed
+         python version : 3.12.8.final.0
+                 solver : libmamba (default)
+       virtual packages : __archspec=1=skylake
+                          __conda=24.11.3=0
+                          __glibc=2.39=0
+                          __linux=5.15.167.4=0
+                          __unix=0=0
+       base environment : /home/sathiyabama/miniforge3  (writable)
+      conda av data dir : /home/sathiyabama/miniforge3/etc/conda
+  conda av metadata url : None
+           channel URLs : https://conda.anaconda.org/conda-forge/linux-64
+                          https://conda.anaconda.org/conda-forge/noarch
+          package cache : /home/sathiyabama/miniforge3/pkgs
+                          /home/sathiyabama/.conda/pkgs
+       envs directories : /home/sathiyabama/miniforge3/envs
+                          /home/sathiyabama/.conda/envs
+               platform : linux-64
+             user-agent : conda/24.11.3 requests/2.32.3 CPython/3.12.8 Linux/5.15.167.4-microsoft-standard-WSL2 ubuntu/24.04.1 glibc/2.39 solver/libmamba conda-libmamba-solver/24.9.0 libmambapy/1.5.12
+                UID:GID : 1000:1000
+             netrc file : None
+           offline mode : False
+
+[?2004h(assignment1.3) ]0;sathiyabama@TIGER06186: ~/miniforge3[01;32msathiyabama@TIGER06186[00m:[01;34m~/miniforge3[00m$ exit
+[?2004lexit
+
+Script done on 2025-02-05 08:31:47+00:00 [COMMAND_EXIT_CODE="0"]
